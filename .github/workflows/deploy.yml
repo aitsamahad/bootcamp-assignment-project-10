@@ -28,7 +28,10 @@ jobs:
         node-version: 12
     
     - name: Install Gatsby-cli
-      run: npm install -g gatsby-cli 
+      run: npm install -g gatsby-cli
+    
+    - name: Installing dependencies
+      run: npm install
       
     - name: Build Gatsby application
       run: gatsby build
