@@ -1,12 +1,7 @@
-<<<<<<< HEAD
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
-=======
-// require('dotenv').config({
+// require("dotenv").config({
 //   path: `.env.${process.env.NODE_ENV}`,
 // });
->>>>>>> 7840be7c857c9a1008e8d32710df74e97d3f99b3
+
 
 module.exports = {
   siteMetadata: {
