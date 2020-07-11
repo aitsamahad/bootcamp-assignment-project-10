@@ -33,7 +33,7 @@ jobs:
     - name: Installing dependencies
       run: npm install
     
-    - name: Adding ENV variables
+    - name: Adding ENV variables to the workflow
       env:
           CI: true
           CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
