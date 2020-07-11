@@ -1,6 +1,6 @@
-require('dotenv').config({
+require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
-});
+})
 
 module.exports = {
   siteMetadata: {
@@ -40,12 +40,12 @@ module.exports = {
       },
     },
     {
-			resolve: 'gatsby-plugin-snipcart',
-			options: {
+      resolve: "gatsby-plugin-snipcart",
+      options: {
         apiKey: process.env.GATSBY_SNIPCART_APIKEY,
-        autopop: true
-			}
-		},
+        autopop: true,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

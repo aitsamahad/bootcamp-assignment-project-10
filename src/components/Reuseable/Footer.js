@@ -1,17 +1,17 @@
-import React from 'react'
+import React from "react"
 
 export default function Footer() {
-    return (
-        <footer>
-            <div className="footer-block">
-                <div className="container-fluid">
-                    <div className="row">
-                        <div className="col-12 pt-2 mx-auto text-center bg-dark text-light">
-                            <h6>Awesome copyright footer &copy; 2020 </h6>
-                        </div>
-                    </div>
-                </div>
+  return (
+    <footer>
+      <div className="footer-block">
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-12 pt-2 mx-auto text-center bg-dark text-light">
+              <h6>Developed by Aitsam Ahad | copyright footer &copy; 2020 </h6>
             </div>
-        </footer>
-    )
+          </div>
+        </div>
+      </div>
+    </footer>
+  )
 }
