@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
+=======
+// require('dotenv').config({
+//   path: `.env.${process.env.NODE_ENV}`,
+// });
+>>>>>>> 7840be7c857c9a1008e8d32710df74e97d3f99b3
 
 module.exports = {
   siteMetadata: {
@@ -34,18 +40,27 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        spaceId: `${ process.env.CONTENTFUL_SPACE_ID }`,
         // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        accessToken: `${ process.env.CONTENTFUL_ACCESS_TOKEN }`,
       },
     },
     {
+<<<<<<< HEAD
       resolve: "gatsby-plugin-snipcart",
       options: {
         apiKey: process.env.GATSBY_SNIPCART_APIKEY,
         autopop: true,
       },
     },
+=======
+			resolve: 'gatsby-plugin-snipcart',
+			options: {
+        apiKey: `${ process.env.GATSBY_SNIPCART_APIKEY }`,
+        autopop: true
+			}
+		},
+>>>>>>> 7840be7c857c9a1008e8d32710df74e97d3f99b3
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
