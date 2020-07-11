@@ -34,15 +34,15 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: `${ secrets.CONTENTFUL_SPACE_ID }`,
+        spaceId: `${{ secrets.CONTENTFUL_SPACE_ID }}`,
         // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: `${ secrets.CONTENTFUL_ACCESS_TOKEN }`,
+        accessToken: `${{ secrets.CONTENTFUL_ACCESS_TOKEN }}`,
       },
     },
     {
 			resolve: 'gatsby-plugin-snipcart',
 			options: {
-        apiKey: `${ secrets.GATSBY_SNIPCART_APIKEY }`,
+        apiKey: `${{ secrets.GATSBY_SNIPCART_APIKEY }}`,
         autopop: true
 			}
 		},
